@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Canvas Drawing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/drawing.js"></script>
+    <script src="js/tree.js"></script>
+</head>
+
+<body>
+
+    <h3> Computer Graphics Engineering Exercise : Canvas Drawing</h3>
+
+    <canvas id="drawingBoard" width="500px" height="500px">
+
+    </canvas>
+
+    <script>
+        var context = document.getElementById('drawingBoard').getContext('2d')
+
+
+        draw_house(context)
+        draw_car(context)
+        creatTree(context, 410, 300, 90, 180, 5)
+
+    </script>
+
+</body>
+
+</html>
